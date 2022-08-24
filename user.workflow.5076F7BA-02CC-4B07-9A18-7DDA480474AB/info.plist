@@ -178,7 +178,11 @@ What would you like to do next?</string>
 
 This Universal Action is available for selected text and returns the word count in a dialog box. There is an option to copy the result to the clipboard.
 
-Version 2.0 23/08/2022: substituted `Dialog Conditional` action for AppleScript dialog and added option to copy to clipboard.</string>
+Note If you have not previously used `Automation Taks` in any Alfred workflow you may need to doouble click on the `Automation Task` in this workflow and then choose `Update Tasks` at the bottom of the left hand pane to ensure tasks are up to date.
+
+**Version 2.0** 23/08/2022: substituted `Dialog Conditional` action for AppleScript dialog and added option to copy to clipboard.  
+
+**Version 2.1** 24/08/2022: added warning about updating `Automation Tasks`.</string>
 	<key>uidata</key>
 	<dict>
 		<key>01F211DC-11F2-4747-ABA3-45D43090E83C</key>
@@ -219,10 +223,8 @@ Version 2.0 23/08/2022: substituted `Dialog Conditional` action for AppleScript 
 	</dict>
 	<key>userconfigurationconfig</key>
 	<array/>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
-	<string>2.0</string>
+	<string>2.1</string>
 	<key>webaddress</key>
 	<string></string>
 </dict>
