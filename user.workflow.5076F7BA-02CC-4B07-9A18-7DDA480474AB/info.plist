@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.alfredapp.src.wordcount</string>
+	<string>app.alfred.stephenc.wordcount</string>
 	<key>category</key>
 	<string>Universal Action</string>
 	<key>connections</key>
@@ -76,21 +76,17 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
+				<key>tasksettings</key>
+				<dict/>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/text-processing/text.metrics</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
+			<string>alfred.workflow.automation.task</string>
 			<key>uid</key>
-			<string>CF0AFB89-59D4-4303-8D76-B1E08055A855</string>
+			<string>D214F710-337A-4880-99AD-BB804C800E58</string>
 			<key>version</key>
-			<integer>3</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -137,17 +133,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>tasksettings</key>
-				<dict/>
-				<key>taskuid</key>
-				<string>com.alfredapp.automation.core/text-processing/text.metrics</string>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.automation.task</string>
+			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>D214F710-337A-4880-99AD-BB804C800E58</string>
+			<string>CF0AFB89-59D4-4303-8D76-B1E08055A855</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -178,22 +178,37 @@ What would you like to do next?</string>
 
 This Universal Action is available for selected text and returns the word count in a dialog box. There is an option to copy the result to the clipboard.
 
-Note If you have not previously used `Automation Taks` in any Alfred workflow you may need to doouble click on the `Automation Task` in this workflow and then choose `Update Tasks` at the bottom of the left hand pane to ensure tasks are up to date.
+---
+**Note:** If you have not previously used `Automation Taks` in any Alfred workflow you may need to doouble click on the `Automation Task` in this workflow and then choose `Update Tasks` at the bottom of the left hand pane to ensure tasks are up to date.
+---
+**Version 2.0** 23/08/2022: substituted `Dialog Conditional` action for AppleScript dialog and added option to copy to clipboard.
 
-**Version 2.0** 23/08/2022: substituted `Dialog Conditional` action for AppleScript dialog and added option to copy to clipboard.  
+**Version 2.1** 24/08/2022: added warning about updating `Automation Tasks`.
 
-**Version 2.1** 24/08/2022: added warning about updating `Automation Tasks`.</string>
+**Version 2.11** 26/08/2022: annotated workflow.
+
+**Version 2.12** 17/10/2022: updated icon.
+
+**Version 2.13** 17/10/2022: improved updated icon.
+
+**Verstion 2.14** 10/11/2022: added new icon.
+
+**Version 2.15** 17/01/2023: updated bundle identifier.</string>
 	<key>uidata</key>
 	<dict>
 		<key>01F211DC-11F2-4747-ABA3-45D43090E83C</key>
 		<dict>
+			<key>note</key>
+			<string>…and confirm it's done so</string>
 			<key>xpos</key>
-			<real>805</real>
+			<real>780</real>
 			<key>ypos</key>
-			<real>35</real>
+			<real>50</real>
 		</dict>
 		<key>645F6DE3-586C-4C79-99FC-FE9FB8819591</key>
 		<dict>
+			<key>note</key>
+			<string>Quit or copy to clipboard</string>
 			<key>xpos</key>
 			<real>405</real>
 			<key>ypos</key>
@@ -201,13 +216,17 @@ Note If you have not previously used `Automation Taks` in any Alfred workflow yo
 		</dict>
 		<key>CF0AFB89-59D4-4303-8D76-B1E08055A855</key>
 		<dict>
+			<key>note</key>
+			<string>Copy count to clipboard…</string>
 			<key>xpos</key>
-			<real>610</real>
+			<real>585</real>
 			<key>ypos</key>
-			<real>35</real>
+			<real>50</real>
 		</dict>
 		<key>D214F710-337A-4880-99AD-BB804C800E58</key>
 		<dict>
+			<key>note</key>
+			<string>Automation Task to get word count</string>
 			<key>xpos</key>
 			<real>220</real>
 			<key>ypos</key>
@@ -215,6 +234,8 @@ Note If you have not previously used `Automation Taks` in any Alfred workflow yo
 		</dict>
 		<key>E5D7021E-2777-45A5-87F0-E89E08AA218B</key>
 		<dict>
+			<key>note</key>
+			<string>Universal Action on selected text</string>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
@@ -223,8 +244,10 @@ Note If you have not previously used `Automation Taks` in any Alfred workflow yo
 	</dict>
 	<key>userconfigurationconfig</key>
 	<array/>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string>2.1</string>
+	<string>2.15</string>
 	<key>webaddress</key>
 	<string></string>
 </dict>
